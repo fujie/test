@@ -1,0 +1,22 @@
+﻿@using Microsoft.Azure.ActiveDirectory.GraphClient
+@model User
+
+@{
+    ViewBag.Title = "ユーザー プロファイル";
+}
+<h2>@ViewBag.Title。</h2>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <td>表示名</td>
+        <td>@Model.DisplayName</td>
+    </tr>
+    <tr>
+        <td>名</td>
+        <td>@Model.GivenName</td>
+    </tr>
+    <tr>
+        <td>姓</td>
+        <td>@Model.Surname</td>
+    </tr>
+</table>
